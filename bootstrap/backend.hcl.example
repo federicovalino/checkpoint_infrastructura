@@ -1,0 +1,5 @@
+bucket         = "dataplatform-tfstate-<ACCOUNT_ID>"
+key            = "bootstrap/terraform.tfstate"
+region         = "us-east-1"
+dynamodb_table = "dataplatform-tf-locks"
+encrypt        = true

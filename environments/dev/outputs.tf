@@ -22,3 +22,8 @@ output "audit_role_arn" {
   description = "ARN del rol de auditoría."
   value       = module.identity.audit_role_arn
 }
+
+output "data_lake_bucket_name" {
+  description = "Bucket del Data Lake."
+  value       = module.storage.bucket_name
+}

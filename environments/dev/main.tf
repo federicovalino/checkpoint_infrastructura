@@ -35,8 +35,3 @@ module "identity" {
   audited_bucket_arns = [module.storage.bucket_arn, local.state_bucket_arn]
   audited_table_arns  = [local.lock_table_arn]
 }
-
-output "data_lake_bucket_name" {
-  description = "Bucket del Data Lake."
-  value       = module.storage.bucket_name
-}
